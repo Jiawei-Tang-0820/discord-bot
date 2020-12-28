@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jiawei-Tang-0820/discord-bot/issues"
   },
-  "homepage": "https://github.com/Jiawei-Tang-0820/discord-bot#readme"
+  "homepage": "https://github.com/Jiawei-Tang-0820/discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
 }
