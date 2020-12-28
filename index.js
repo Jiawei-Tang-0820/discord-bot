@@ -9,7 +9,7 @@ client.once("ready", () => {
 client.on("message", msg => {
     if (msg.content.startsWith("-") && msg.channel.name !== "bot-cmd") {
         msg.channel.send("Uncool comrade, uncool.");
-        msg.channel.send("Bot command are for \"bot-cmd\" channel only. Keep this going then you are off to the Gulag.");
+        msg.channel.send("Bot commands are for \"bot-cmd\" channel only. Keep this going and you are off to the Gulag.");
         msg.channel.send("Remember, Big Brother is watching you.");
     }
 });
