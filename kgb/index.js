@@ -55,7 +55,7 @@ client.on("message", msg => {
         if (score >= 60) {
             msg.channel.send("Good job, citizen. Glory to the motherland.")
         } else {
-            msg.channel.send("The Police is watching you. Behave better or face consequences.")
+            msg.channel.send("The Police is watching you. Behave or face consequences.")
         }
     }
 })
