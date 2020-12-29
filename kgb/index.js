@@ -31,7 +31,7 @@ client.once("ready", () => {
 });
 
 client.on("message", msg => {
-    if (msg.content.startsWith("-") && msg.channel.name !== "bot-cmd") {
+    if ((msg.content.startsWith("-") || msg.content.startsWith("!")) && msg.channel.name !== "bot-cmd") {
         msg.channel.send("Uncool comrade, uncool. Bot commands are for \"bot-cmd\" channel only. Keep this going and you are off to the Gulag.")
         msg.channel.send("Remember, Big Brother is watching you.")
         const userId = msg.author.id
@@ -48,7 +48,7 @@ client.on("message", msg => {
 })
 
 client.on("message", msg => {
-    if (msg.content === "!kgb:myscore") {
+    if (msg.content === "!kgb:myscore" && msg.channel.name === "bot-cmd") {
         const userId = msg.author.id
         const score = scoreBook.getScore(userId)
         msg.channel.send(`Your score is ${score}`)
