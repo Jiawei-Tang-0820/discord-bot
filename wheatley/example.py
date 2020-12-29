@@ -1,7 +1,7 @@
 import discord
 
 client = discord.Client()
-with open(".wheatley") as f:
+with open("./secret") as f:
     token=f.read()
 
 @client.event
